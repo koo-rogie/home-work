@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "live-server . --port=8090 --host=localhost --no-browser",
+    "start": "live-server . --port=8090 --host=localhost",
     "format": "prettier . --check"
   },
   "devDependencies": {
