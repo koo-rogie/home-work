@@ -2,23 +2,34 @@
 
 **13기 구성연**
 
-## 마크다운
-- 1주, 2주차 
+## 과제 링크
+
+- 1주, 2주차 (마크다운 문법, 이번주 공부한 내용 회고하기)
   - [마크다운 문법](./src/md/markdown.md)
   - [회고](./src/md/retrospect.md)
+
 ---
-- 3주차
-  - [마크다운 문법](./src/md/markdown.md)
-  - [회고](./src/md/retrospect.md)
+
+- 3주차 (아바타 온, 오프라인 만들기 / 이번주 공부한 내용 회고하기)
+  - [아바타 html](./src/avatars/avatars.html)
+  - [아바타 회고](./src/avatars/avatars.md)
+
 ---
-- 4주차
-  - [마크다운 문법](./src/md/markdown.md)
-  - [회고](./src/md/retrospect.md)
+
+- 4주차 ()
+  - [마크다운 문법](./src/)
+  - [회고](./src/)
+
 ---
-- 5주차
-  - [마크다운 문법](./src/md/markdown.md)
-  - [회고](./src/md/retrospect.md)
+
+- 5주차 ()
+  - [마크다운 문법](./src/)
+  - [회고](./src/)
+
 ---
-- 6주차
-  - [마크다운 문법](./src/md/markdown.md)
-  - [회고](./src/md/retrospect.md)
+
+- 6주차 ()
+  - [마크다운 문법](./src/)
+  - [회고](./src/)
+
+---
