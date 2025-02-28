@@ -54,7 +54,7 @@
       </header>
       <form action="/" class="login-wraper">
         <figure>
-          <input type="email" name="id" id="id" required placeholder="아이디" />
+          <input type="email" name="id" id="id" required placeholder="아이디(이메일)" />
           <label for="id"
             ><span class="sr-only">아이디를 입력해주세요</span></label
           >
@@ -67,6 +67,7 @@
             id="password"
             required
             placeholder="비밀번호"
+            minlength=""
           />
           <label for="password"
             ><span class="sr-only">비밀번호를 입력해주세요</span></label
@@ -80,8 +81,8 @@
             <label for="login-checkbox">로그인 상태 유지</label>
           </div>
           <div>
-            <label for="">IP 보안</label>
-            <input type="checkbox" name="" id="" />
+            <label for="ip">IP 보안</label>
+            <input type="checkbox" name="ip" id="ip" />
           </div>
         </div>
       </form>
