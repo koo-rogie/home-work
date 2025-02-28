@@ -2,3 +2,48 @@
 
 /* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
 
+body {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 16px;
+  color: #121212;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.container {
+  /* margin: 4.375rem 0.9375rem 6.875rem; */
+  padding-inline: 20px;
+  padding-top: 70px;
+}
+
+.logo-wraper {
+  text-align: center;
+  svg {
+    inline-size: 230px;
+    aspect-ratio: 1/1;
+  }
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+
+  figure {
+
+    input {
+      inline-size: 100%;
+    }
+  }
+  .login-button{
+    block-size: 2.8125rem;
+  }
+}

@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="logo">
+      <header class="logo-wraper">
         <svg
           width="230"
           height="44"
@@ -53,25 +53,37 @@
         </svg>
       </header>
       <form action="/" class="login-wraper">
-        <div>
-          <input type="email" name="id" id="id" required plaeholder="아이디">
-          <label for="id"><span class="sr-only">아이디를 입력해주세요</span></label>
-        </div>
-        <div>
-          <input type="password" name="password" id="password" required plaeholder="비밀번호">
-          <label for="password"><span class="sr-only">비밀번호를 입력해주세요</span></label>
-        </div>
+        <figure>
+          <input type="email" name="id" id="id" required placeholder="아이디" />
+          <label for="id"
+            ><span class="sr-only">아이디를 입력해주세요</span></label
+          >
+          <figcaption>아이디는 이메일 형식으로 입력해주세요</figcaption>
+        </figure>
+        <figure>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            placeholder="비밀번호"
+          />
+          <label for="password"
+            ><span class="sr-only">비밀번호를 입력해주세요</span></label
+          >
+          <figcaption>비밀번호는 10자리 이상 입력해 주세요</figcaption>
+        </figure>
+        <button type="submit" class="login-button">로그인</button>
         <div>
           <div>
-            <input type="checkbox" name="login-checkbox" id="login-checkbox">
+            <input type="checkbox" name="login-checkbox" id="login-checkbox" />
             <label for="login-checkbox">로그인 상태 유지</label>
           </div>
           <div>
             <label for="">IP 보안</label>
-            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="" />
           </div>
         </div>
-
       </form>
     </div>
   </body>
