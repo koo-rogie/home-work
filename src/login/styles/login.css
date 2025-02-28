@@ -39,9 +39,11 @@ form {
   flex-flow: column nowrap;
 
   figure {
+
     &:first-child {
       margin-bottom: 0.625rem;
     }
+
     input {
       inline-size: 100%;
       font-size: 0.875rem;
@@ -55,16 +57,25 @@ form {
         background-color: #e9f0fd;
       }
     }
+
     figcaption {
       font-size: 0.75rem;
       color: red;
     }
   }
+    
   .login-button {
     block-size: 2.8125rem;
     color: #fff;
     background-color: #03cf5d;
     margin-top: 1.25rem;
     border: none;
+  }
+
+  .checkbox-ip-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 1.25rem;
   }
 }
