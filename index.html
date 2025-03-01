@@ -4,69 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML/CSS 과제</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Noto Sans KR", sans-serif;
-        background-color: #f5f5f5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-
-      .profile-card {
-        background: white;
-        border-radius: 1.25rem;
-        box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.1);
-        padding: 32px;
-        width: 18.75rem;
-        text-align: center;
-      }
-
-      .profile-image {
-        width: 9.375rem;
-        height: 9.375rem;
-        border-radius: 50%;
-        margin-bottom: 24px;
-        object-fit: cover;
-        border: 0.3125rem solid #f0f0f0;
-      }
-
-      .name {
-        font-size: 24px;
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 8px;
-      }
-
-      .bio {
-        color: #666;
-        line-height: 1.6;
-        margin-bottom: 24px;
-      }
-
-      .homework-links {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 16px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .homework-links a {
-        color: #555;
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-
-      .homework-links a:hover {
-        color: #007bff;
-      }
-    </style>
+    <link rel="stylesheet" href="./index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
       rel="stylesheet"
@@ -77,47 +15,48 @@
     />
   </head>
   <body>
-    <div class="profile-card">
-      <img
-        src="./src/assets/images/main-img.png"
-        alt="프로필 이미지"
-        class="profile-image"
-      />
-      <h1 class="name">구성연</h1>
-      <p class="bio">멋쟁이 사자처럼 프론트엔드 부트캠프 13기 구성연 입니다.</p>
-      <p>과제 결과는 링크를 선택해주세요.</p>
-      <ul class="homework-links">
-        <li>
-          <p>1, 2주차 과제</p>
-          <a href="./src/md/markdown.md">마크다운 문법</a>
-          <a href="./src/md/retrospect.md">회고</a>
-        </li>
-        <li>
-          <p>2주차 과제</p>
-          <a href="./src/avatars/avatars.html">아바타 html</a>
-          <a href="./src/avatars/avatars.md">아바타 회고록</a>
-        </li>
-        <li>
-          <p>3주차 과제</p>
-          <a href="./src/login/login.html">로그인 html</a>
-          <a href="./src/login/login.md">로그인 회고록</a>
-        </li>
-        <li>
-          <p>4주차 과제</p>
-          <a href="./src/"></a>
-          <a href="./src/"></a>
-        </li>
-        <li>
-          <p>5주차 과제</p>
-          <a href="./src/"></a>
-          <a href="./src/"></a>
-        </li>
-        <li>
-          <p>6주차 과제</p>
-          <a href="./src/"></a>
-          <a href="./src/"></a>
-        </li>
-      </ul>
+    <div class="profile-card-wraper">
+      <div class="proflile-card">
+        <img
+          src="./src/assets/images/main-img.png"
+          alt="프로필 이미지"
+          class="profile-image"
+        />
+        <h1 class="name">구성연</h1>
+        <p class="bio">
+          멋쟁이 사자처럼 프론트엔드 부트캠프 13기 구성연 입니다.
+        </p>
+      </div>
+      <div class="homework-list-wraper">
+        <p>과제 결과는 아래 링크를 선택해주세요.</p>
+        <ul class="homework-links">
+          <li>
+            <p>1, 2주차 과제</p>
+            <a href="./src/md/markdown.md">마크다운 문법</a>
+            <a href="./src/md/retrospect.md">회고</a>
+          </li>
+          <li>
+            <p>3주차 과제</p>
+            <a href="./src/avatars/avatars.html">아바타 html</a>
+            <a href="./src/avatars/avatars.md">아바타 회고록</a>
+          </li>
+          <li>
+            <p>4주차 과제</p>
+            <a href="./src/login/login.html">로그인 html</a>
+            <a href="./src/login/login.md">로그인 회고록</a>
+          </li>
+          <li>
+            <p>5주차 과제</p>
+            <a href="./src/"></a>
+            <a href="./src/"></a>
+          </li>
+          <li>
+            <p>6주차 과제</p>
+            <a href="./src/"></a>
+            <a href="./src/"></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

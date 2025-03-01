@@ -42,8 +42,9 @@ body {
   display: flex;
   flex-flow: column nowrap;
 
-  /* 아이디 비밀번호 */
   figure {
+    position: relative;
+
     &:first-child {
       margin-bottom: 0.625rem;
     }
@@ -63,11 +64,19 @@ body {
       }
     }
 
+    /* 부모 요소인 figure가 input을 포함할 때 figcaption 보이게 하기 */
+    &:has(input:focus),
+    &:has(input:not(:placeholder-shown)) {
+      figcaption {
+        opacity: 1;
+      }
+    }
+
     figcaption {
-      /* position: absolute;
-      opacity: 0; */
       font-size: 0.75rem;
       color: red;
+      opacity: 0;
+      margin-block: 0.25rem;
     }
   }
 
@@ -79,12 +88,13 @@ body {
     border: none;
   }
 }
-/* 체크박스 */
+
+/* 체크박스, IP */
 .checkbox-ip-wrap {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-block: 1.25rem;
+  margin-block-start: 1.25rem;
   @media (min-width: 768px) {
     justify-content: space-between;
   }
@@ -111,6 +121,7 @@ body {
           width: 1.5rem;
           height: 1.5rem;
           background: url(../assets/unchecked.svg) no-repeat center center;
+
         }
       }
 
