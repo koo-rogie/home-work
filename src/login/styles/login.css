@@ -1,4 +1,4 @@
-@import "/src/common/modern-reset.css";
+@import "../../common/modern-reset.css";
 
 /* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
 
@@ -44,6 +44,8 @@ body {
 
   figure {
     position: relative;
+    margin: 0;
+    padding: 0;
 
     &:first-child {
       margin-bottom: 0.625rem;
@@ -121,7 +123,6 @@ body {
           width: 1.5rem;
           height: 1.5rem;
           background: url(../assets/unchecked.svg) no-repeat center center;
-
         }
       }
 
