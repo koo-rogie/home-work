@@ -38,8 +38,8 @@ form {
   display: flex;
   flex-flow: column nowrap;
 
+  /* 아이디 비밀번호 */
   figure {
-
     &:first-child {
       margin-bottom: 0.625rem;
     }
@@ -55,15 +55,18 @@ form {
       &:focus {
         border: 0.0625rem solid #03cf5d;
         background-color: #e9f0fd;
+        outline: none;
       }
     }
 
     figcaption {
+      /* position: absolute;
+      opacity: 0; */
       font-size: 0.75rem;
       color: red;
     }
   }
-    
+
   .login-button {
     block-size: 2.8125rem;
     color: #fff;
@@ -72,10 +75,38 @@ form {
     border: none;
   }
 
+  /* 체크박스 */
   .checkbox-ip-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin-block: 1.25rem;
+
+    .check-box {
+      /* display: flex;
+      justify-content: space-between;
+      align-items: center; */
+
+      #login-checkbox {
+        position: relative;
+        margin: 0;
+        margin-right: 10px;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          background: url(../assets/unchecked.svg) no-repeat center center;
+          width: 1rem;
+          height: 1rem;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    .ip-box {
+      position: absolute;
+      opacity: 0;
+    }
   }
 }
