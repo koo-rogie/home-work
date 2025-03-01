@@ -23,6 +23,10 @@ body {
   /* margin: 4.375rem 0.9375rem 6.875rem; */
   padding-inline: 20px;
   padding-top: 70px;
+  @media (min-width: 768px) {
+    inline-size: 31.25rem;
+    margin: 0 auto;
+  }
 }
 
 .logo-wraper {
@@ -34,7 +38,7 @@ body {
   }
 }
 
-form {
+.login-wraper {
   display: flex;
   flex-flow: column nowrap;
 
@@ -74,39 +78,86 @@ form {
     margin-top: 1.25rem;
     border: none;
   }
-
-  /* 체크박스 */
-  .checkbox-ip-wrap {
+}
+/* 체크박스 */
+.checkbox-ip-wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-block: 1.25rem;
+  @media (min-width: 768px) {
+    justify-content: space-between;
+  }
+  .check-box {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    margin-block: 1.25rem;
+    position: relative;
 
-    .check-box {
-      /* display: flex;
-      justify-content: space-between;
-      align-items: center; */
+    #login-checkbox {
+      display: none;
 
-      #login-checkbox {
+      & + label {
         position: relative;
-        margin: 0;
-        margin-right: 10px;
-        &::after {
+        padding-left: 2rem;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+
+        &::before {
           content: "";
           display: block;
           position: absolute;
+          left: 0;
+          width: 1.5rem;
+          height: 1.5rem;
           background: url(../assets/unchecked.svg) no-repeat center center;
-          width: 1rem;
-          height: 1rem;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
         }
       }
+
+      &:checked + label::before {
+        background: url(../assets/checked.svg) no-repeat center center;
+      }
     }
-    .ip-box {
-      position: absolute;
-      opacity: 0;
+  }
+
+  .ip-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    clip: rect(0, 0, 0, 0);
+
+    @media (min-width: 768px) {
+      position: static;
+      opacity: 1;
+    }
+
+    .ip-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.25rem;
+
+      position: relative;
+
+      .ip-link {
+        text-decoration: none;
+        color: #121212;
+        display: block;
+      }
+
+      > a::after {
+        content: " OFF";
+        color: #999;
+      }
+    }
+
+    .ip-checkbox:checked + .ip-label > a {
+      &::after {
+        content: "ON";
+        color: #03cf5d;
+      }
     }
   }
 }

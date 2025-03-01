@@ -81,17 +81,20 @@
           <figcaption>비밀번호는 10자리 이상 입력해 주세요</figcaption>
         </figure>
         <button type="submit" class="login-button">로그인</button>
-        <div class="checkbox-ip-wrap">
-          <div class="check-box">
-            <input type="checkbox" name="login-checkbox" id="login-checkbox" />
-            <label for="login-checkbox">로그인 상태 유지</label>
-          </div>
-          <div class="ip-box">
-            <label for="ip">IP 보안</label>
-            <input type="checkbox" name="ip" id="ip" />
-          </div>
-        </div>
       </form>
+      <div class="checkbox-ip-wrap">
+        <form action="/" class="check-box">
+          <input type="checkbox" name="login-checkbox" id="login-checkbox" />
+          <label for="login-checkbox">로그인 상태 유지</label>
+        </form>
+        <div class="ip-box">
+          <input type="checkbox" id="ip-security" class="ip-checkbox" hidden />
+          <label for="ip-security" class="ip-label">
+            <span>IP 보안</span>
+            <a href="./pages/ip_security.html" class="ip-link"></a>
+          </label>
+        </div>
+      </div>
     </div>
   </body>
 </html>
