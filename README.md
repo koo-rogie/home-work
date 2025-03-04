@@ -17,7 +17,7 @@
 ---
 
 - 4주차 (네이버 로그인 form 만들기 / 이번주 공부한 내용 회고하기)
-  - [마크다운 문법](./src/login/login.html)
+  - [네이버 로그인 html](./src/login/login.html)
   - [회고](./src/login/login.md)
 
 ---
