@@ -1,3 +1,88 @@
 @import "./reset.css";
 @import "./theme.css";
 @import "./base.css";
+
+/* 카드 컴포넌트 */
+
+.components {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
+  .title-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    &.dark {
+      color: var(--white);
+    }
+    &.white {
+      color: var(--black);
+    }
+    .title {
+      font-size: var(--extra-large-text);
+      font-weight: 600;
+    }
+    .description {
+      font-size: var(--base-text);
+      margin-bottom: var(--small-spacing);
+      line-height: var(--line-normal);
+      span {
+        display: block;
+        text-align: center;
+      }
+    }
+    .release-info {
+      font-size: var(--small-text);
+      color: var(--gray);
+    }
+  }
+  .button-container {
+    display: flex;
+
+    .button {
+      font-size: var(--xx-small-text);
+      background: none;
+      outline: none;
+      border: 0;
+      border-radius: 50px;
+      margin: var(--x-small-spacing);
+      padding: var(--x-small-spacing);
+      @media (min-width: 64rem) {
+        font-size: var(--x-small-text);
+      }
+      &:focus {
+        outline: 1px solid var(--blue-300);
+      }
+
+      &.dark-black {
+        background: var(--black);
+        color: var(--white);
+      }
+      &.dark-gray {
+        color: inherit;
+        border: 1px solid var(--black);
+        &:hover {
+          background-color: var(--blue-300);
+          color: var(--white);
+          border: 0;
+        }
+      }
+      &.white-black {
+        background-color: var(--blue-300);
+        color: var(--white);
+      }
+      &.white-gray {
+        color: var(--blue-300);
+        border: 1px solid var(--blue-300);
+        &:hover {
+          background-color: var(--blue-300);
+          color: var(--white);
+          border: 0;
+        }
+      }
+    }
+  }
+}

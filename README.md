@@ -22,9 +22,10 @@
 
 ---
 
-- 5주차 ()
-  - [마크다운 문법](./src/)
-  - [회고](./src/)
+- 5주차 (애플 사이트 만들기 / 만든 사이트 동영상 마크다운)
+  - [애플 사이트 html](./src/apple/apple.html)
+  - [애플 카드 컴포넌트 html](./src/apple/card-component.html)
+  - [회고](./src/apple/apple.md)
 
 ---
 
