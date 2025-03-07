@@ -9,7 +9,6 @@
     background-position: 50% 0;
     background-size: cover;
     object-fit: cover;
-    outline: 1px solid red;
   }
   .ipad-pro {
     background-image: image-set(
