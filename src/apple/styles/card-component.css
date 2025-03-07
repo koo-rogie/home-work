@@ -9,12 +9,13 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  margin: 5rem;
+  margin: var(--large-spacing);
   .title-container {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    text-align: center;
     &.dark {
       color: var(--white);
     }
@@ -29,6 +30,7 @@
       font-size: var(--base-text);
       margin-bottom: var(--small-spacing);
       line-height: var(--line-normal);
+
       span {
         display: block;
         text-align: center;

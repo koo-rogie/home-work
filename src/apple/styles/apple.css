@@ -6,50 +6,93 @@
   .product {
     height: var(--size);
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    object-fit: contain;
+    background-position: 50% 0;
+    background-size: cover;
+    object-fit: cover;
+    outline: 1px solid red;
   }
   .ipad-pro {
-    background-image: url(../products/ipad_pro.jpeg);
+    background-image: image-set(
+      url("../products/ipad_pro.jpeg") 1x,
+      url("../products/ipad_pro_2x.jpeg") 2x
+    );
+    /* background-size: 200%; */
     @media (min-width: 64rem) {
-      background-image: url(../products/ipad_pro_2x.jpeg);
+      background-image: image-set(
+        url("../products/ipad_pro_wide.jpeg") 1x,
+        url("../products/ipad_pro_wide_2x.jpeg") 2x
+      );
+      /* background-size: 150%; */
     }
   }
   .ipad-air {
-    background-image: url(../products/ipad_air.jpeg);
+    background-image: image-set(
+      url("../products/ipad_air.jpeg") 1x,
+      url("../products/ipad_air_2x.jpeg") 2x
+    );
+    /* background-size: 144%;
+    background-position: center 5%; */
+
     @media (min-width: 64rem) {
-      background-image: url(../products/ipad_air_2x.jpeg);
+      background-image: image-set(
+        url("../products/ipad_air_wide.jpeg") 1x,
+        url("../products/ipad_air_wide_2x.jpeg") 2x
+      );
+
+      /* background-size: 150%;
+      background-position: center center; */
     }
   }
   .iphone-15-pro {
-    background-image: url(../products/iphone15_pro.jpeg);
+    background-image: image-set(
+      url("../products/iphone15_pro.jpeg") 1x,
+      url("../products/iphone15_pro_2x.jpeg") 2x
+    );
+    /* background-size: 180%; */
+
     @media (min-width: 64rem) {
-      background-image: url(../products/iphone15_pro_wide.jpeg);
+      background-image: image-set(
+        url("../products/iphone15_pro_wide.jpeg") 1x,
+        url("../products/iphone15_pro_wide_2x.jpeg") 2x
+      );
     }
   }
   .iphone-15 {
     background-image: url(../products/iphone15.jpeg);
+    /* background-size: 150%; */
+
     @media (min-width: 64rem) {
       background-image: url(../products/iphone15_2x.jpeg);
+      /* background-size: 100%; */
     }
   }
   .watch {
     background-image: url(../products/apple_watch.jpeg);
+    /* background-size: 180%; */
+
     @media (min-width: 64rem) {
       background-image: url(../products/apple_watch_2x.jpeg);
     }
   }
   .macbook-air {
     background-image: url(../products/macbook_air.jpeg);
+    /* background-size: 150%;
+    background-position: center 23%; */
+
     @media (min-width: 64rem) {
       background-image: url(../products/macbook_air_2x.jpeg);
+      /* background-size: 100%;
+      background-position: center 23%; */
     }
   }
   .airpods-pro {
     background-image: url(../products/airpods_pro.jpeg);
+    /* background-size: 150%; */
+
     @media (min-width: 64rem) {
       background-image: url(../products/airpods_pro_2x.jpeg);
+      /* background-size: 100%;
+      background-position: center 70%; */
     }
   }
 }
